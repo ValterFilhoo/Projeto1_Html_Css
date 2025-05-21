@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+
+    .containerLayout {
+        
+        width: 100%;
+        height: 100%;
+
+        display: grid;
+        grid-template-areas: 
+            'Header'
+            'Main'
+            'Aside'
+            'Footer'
+        ;
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .containerHeader {
+        grid-area: Header;
+        background-color: rgb(130, 130, 196);
+
+        display: grid;
+        grid-template-columns: 1fr;
+
+        margin-bottom: 20px;
+    }
+
+    
+    .containerMain {
+        grid-area: Main;
+        background-color: rgb(233, 133, 133);
+
+        margin-bottom: 50px;
+    }
+
+    .containerAside {
+        grid-area: Aside;
+        background-color: rgb(200, 166, 232);
+        margin-bottom: 50px;
+    }
+
+    .containerFooter {
+        grid-area: Footer;
+        background-color: rgb(162, 214, 111);
+    }
+
+    .containerLogoAndNav {
+        display: grid;
+        background-color: #2571B7;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 60px;
+        align-items: center;
+        position: fixed;
+        left: 0;
+        right: 0;
+    }
+
+    .containerIconMenu {
+        margin-left: 5%;
+    }
+
+    .containerIconMenu .iconMenu {
+        color: #FFFFFF;
+    }
+
+    .containerLogoHeader {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .containerLogo {
+        background-color: #002050;
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 5%;
+        padding: 0.60rem;
+    }
+
+    .containerLogo p {
+        color: #FFFFFF;
+        font-size: 0.88rem;
+    }
+
+}
+
