@@ -10,7 +10,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
     .containerLayout {
         
@@ -31,10 +31,10 @@ body {
 
     .containerHeader {
         grid-area: Header;
-        background-color: rgb(130, 130, 196);
 
         display: grid;
         grid-template-columns: 1fr;
+        grid-row: 600px;
 
         margin-bottom: 20px;
     }
@@ -42,8 +42,6 @@ body {
     
     .containerMain {
         grid-area: Main;
-        background-color: rgb(233, 133, 133);
-
         margin-bottom: 50px;
     }
 
@@ -64,9 +62,9 @@ body {
         grid-template-columns: 1fr 1fr;
         grid-auto-rows: 60px;
         align-items: center;
-        position: fixed;
+        /*position: fixed;
         left: 0;
-        right: 0;
+        right: 0;  */
     }
 
     .containerIconMenu {
@@ -97,6 +95,203 @@ body {
         color: #FFFFFF;
         font-size: 0.88rem;
     }
+
+    .containerBannerInitial {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 500px;
+        align-items: center;
+    }
+
+    .containerBannerInitial::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("../imagens/img_banner_notebook.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        align-items: center;
+        opacity: 0.8;
+        z-index: -1;
+    }
+    
+    .containerTextsBannerInitial {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        gap: 2rem;
+    }
+
+    .containerBannerInitial h1 {
+        font-size: 2.63rem;
+        color: #FFFFFF;
+    }
+
+    .containerBannerInitial .paragrafoBannerInitial {
+        width: 90%;
+        font-size: 1.5rem;
+        font-weight: normal;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .btnBannerInitial {
+        background-color: #00A4EF;
+        width: 45%;
+        padding: 1rem;
+        text-align: center;        
+    }
+
+    .btnBannerInitial a {
+        text-decoration: none;
+        color: #FFFFFF;
+        font-size: 1.32rem;
+    }
+
+    .btnBannerInitial:hover {
+        background-color: #58beee;
+    }
+    
+    .paragrafoBannerInitialFinal {
+        width: 25%;
+        margin-top: auto;
+    }
+
+    .paragrafoBannerInitialFinal p {
+        text-transform: uppercase;
+        word-wrap: break-word;
+    }
+
+    span {
+        font-size: 0.60rem;
+        color: #FFFFFF;
+    }
+
+    strong {
+        color: #FFFFFF;
+        font-size: 1.50rem;
+    }
+
+    .containerSectionMain {
+        background-color: #FFFFFF;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+
+    .containerParagraphMain {
+        width: 92%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+        gap: 3vh;
+    }
+
+    .containerParagraphMain p {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .containerTitleSection {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 2vh;
+    }
+
+    .containerTitleSection h2 {
+        color: #2571B7;
+        font-size: 1.5rem;
+    }
+
+    .containerTitleSection p {
+        font-size: 0.95rem;
+    }
+
+    .containerCardsTarget {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+    }
+
+    .containerCardTarget {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 130px;
+        border: 1px solid black;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .containerImgIconTarget {
+        width: 40%;
+        height: 40%;
+        grid-column: 1/2;
+    }
+
+    .containerImgIconTarget img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+    }
+
+    .containerContentCardTarget h3 {
+        font-size: 1.15rem;
+    }
+
+    .containerContentCardTarget p {
+        font-size: 0.80rem;
+    }
+
+    .target1, .target2, .target3, .target4, .target5, .target6 {
+        color: #FFFFFF;
+    }
+
+    .target1 {
+        background-color: #0072C6;
+    }
+
+    .target2 {
+        background-color: #2C5898;
+    }
+
+    .target3 {
+        background-color: #207245;
+    }
+
+    .target4 {
+        background-color: #CB4A32;
+    }
+
+    .target5 {
+        background-color: #733781;
+    }
+
+    .target6 {
+        background-color: #00AFF0;
+    }
+
 
 }
 
