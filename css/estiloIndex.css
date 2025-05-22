@@ -219,7 +219,7 @@ body {
         gap: 2vh;
     }
 
-    .containerTitleSection h2 {
+    .titleSecondary {
         color: #2571B7;
         font-size: 1.5rem;
     }
@@ -293,6 +293,83 @@ body {
     .target6 {
         background-color: #00AFF0;
     }
+
+    .containerSectionSecondary {
+        width: 100%;
+        height: 30%;
+        margin-bottom: 20%;
+    }
+
+    .containerCardsSecondary {
+        width: 95%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .cardSecondary {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-areas: 
+            'conteent conteent image'
+            'conteent conteent image'
+            'button button .'
+        ;
+        gap: 0.62rem;
+        margin-top: 10%;
+    }
+
+    .textColorGreen  {
+        color: #7FBA00;
+    }
+
+    .borderGreen {
+        border: 1px solid #7FBA00;
+    }
+
+    .textColorBlue {
+        color: #00A4EF;
+    }
+
+    .borderBlue {
+        border: 1px solid #00A4EF;
+    }
+
+    .textColorOrange {
+        color: #FFB900;
+    }
+
+    .borderOrange {
+        border: 1px solid #FFB900;
+    }
+
+    .containerContentCardSecondary {
+        grid-area: conteent;
+        display: grid;
+        gap: 0.62rem;
+    }
+
+    .containerImgCardSecondary {
+        grid-area: image;
+        align-self: center;
+        justify-self: flex-end;
+    }
+
+    .containerBtnCardSecondary {
+        grid-area: button;
+    }
+
+    .containerBtnCardSecondary button {
+        padding: 0.50rem;
+        background-color: #FFFFFF;
+    }
+
+    hr {
+        border: 2px solid #DEDEDE;
+    }
+    
 
 
 }
