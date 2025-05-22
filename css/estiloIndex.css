@@ -29,26 +29,25 @@ body {
 
     }
 
+    /* Estilo do cabeçalho mobile */
     .containerHeader {
         grid-area: Header;
-
         display: grid;
         grid-template-columns: 1fr;
-        grid-row: 600px;
-
-        margin-bottom: 20px;
+        grid-template-rows: 500px;
+        margin-bottom: 1.25rem;
     }
 
     
     .containerMain {
         grid-area: Main;
-        margin-bottom: 50px;
+        margin-bottom: 3.13rem;
     }
 
     .containerAside {
         grid-area: Aside;
         background-color: rgb(200, 166, 232);
-        margin-bottom: 50px;
+        margin-bottom: 3.13rem;
     }
 
     .containerFooter {
@@ -195,6 +194,7 @@ body {
         margin-top: 1rem;
     } */
 
+    /* Estilo da seção principal (com os cards com icones de alvo) */
     .containerSectionMain {
         width: 100%;
         background-color: #FFFFFF;
@@ -221,12 +221,13 @@ body {
     }
 
     .containerParagraphMain {
-        width: 92%;
+        width: 95%;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
+        margin: 0 auto;
         padding-top: 3rem;
-        padding-bottom: 2rem;
         gap: 3vh;
     }
 
@@ -236,18 +237,19 @@ body {
     }
 
     .containerTitleSection {
-        width: 90%;
+        width: 80%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        text-align: center;
+        margin: 0 auto;
         gap: 2vh;
     }
 
     .titleSecondary {
         color: #2571B7;
         font-size: 1.5rem;
+        margin-top: 8%;
     }
 
     .containerTitleSection p {
@@ -269,7 +271,7 @@ body {
         margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        gap: 20px;
+        gap: 1.25rem;
     }
 
     /* 
@@ -300,6 +302,7 @@ body {
 
     .containerContentCardTarget {
         grid-area: ContentCardTarget;
+        justify-content: center;
     }
 
     .containerImgIconTarget {
@@ -355,10 +358,12 @@ body {
         background-color: #00AFF0;
     }
 
+
+    /* Estilo da seção secundária (que tem os cardscom icones de mãos, segurança e laptop) */
     .containerSectionSecondary {
         width: 100%;
-        height: 25%;
-        margin-bottom: 20%;
+        height: 30%;
+        margin-bottom: 15%;
     }
 
     .containerTitleSection {
@@ -367,11 +372,10 @@ body {
 
     .containerCardsSecondary {
         width: 95%;
-        height: 100%;
+        height: 90%;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
     }
 
     .cardSecondary {
@@ -381,7 +385,6 @@ body {
             'conteent conteent iconn'
             'conteent conteent iconn'
             'button button .'
-            'border border border'
         ;
         gap: 1.5rem;
     }
@@ -423,7 +426,8 @@ body {
     }
 
     hr {
-        grid-area: border;
+        margin-top: 5%;
+        margin-bottom: 5%;
     }
 
     .containerBtnCardSecondary {
@@ -435,11 +439,26 @@ body {
         background-color: #FFFFFF;
     }
 
+    .btnGreen:hover, .btnBlue:hover, .btnOrange:hover {
+        color: #FFFFFF;
+    }
+
+    .btnGreen:hover {
+        background-color: rgba(151, 177, 95, 0.439);
+    }
+
+    .btnBlue:hover {
+        background-color: rgba(94, 170, 200, 0.439);
+    }
+
+    .btnOrange:hover {
+        background-color: rgba(223, 169, 20, 0.439);
+    }
+
     hr {
         border: 2px solid #DEDEDE;
     }
     
-
 
 }
 
