@@ -363,7 +363,6 @@ body {
     .containerSectionSecondary {
         width: 100%;
         height: 30%;
-        margin-bottom: 15%;
     }
 
     .containerTitleSection {
@@ -459,6 +458,51 @@ body {
         border: 2px solid #DEDEDE;
     }
     
+    .containerSectionSecundaryTwo {
+        width: 100%;
+        height: 25%;
+        margin-bottom: 20%;
+    }
+
+    .containerCardsSecondaryTwo {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cardsSecondaryTwo {
+        width: 95%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.50rem;
+    }
+
+    .cardsSecondaryTwo.borderBottomNone {
+        border-top: 3px solid #DEDEDE;
+        border-left: 3px solid #DEDEDE;
+        border-right: 3px solid #DEDEDE;
+    }
+
+    .cardsSecondaryTwo.borderBottom {
+        border: 3px solid #DEDEDE;
+    }
+
+    .cardsSecondaryTwo h3 {
+        color: #F25022;
+        font-size: 0.94rem;
+    }
+
+    .cardsSecondaryTwo p {
+        font-size: 0.75rem;
+    }
+
+
+
 
 }
 
