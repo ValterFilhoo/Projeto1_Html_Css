@@ -30,33 +30,31 @@ body {
     }
 
     /* Estilo do cabeçalho mobile */
-    .containerHeader {
+    .header {
         grid-area: Header;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 700px;
-        margin-bottom: 1.25rem;
+        margin-bottom: 5%;
         justify-content: center;
     }
 
     
-    .containerMain {
+    .main {
         grid-area: Main;
-        margin-bottom: 3.13rem;
     }
 
-    .containerAside {
+    .aside {
         grid-area: Aside;
-        margin-bottom: 3.13rem;
     }
 
-    .containerFooter {
+    .footer {
         grid-area: Footer;
         background-color: rgb(162, 214, 111);
     }
 
 
-    .containerLogoAndNav {
+    .header__container {
         display: grid;
         background-color: #2571B7;
         grid-template-columns: 1fr 1fr;
@@ -67,20 +65,20 @@ body {
         right: 0; 
     }
 
-    .containerIconMenu {
+    .header__containerIcon {
         margin-left: 5%;
     }
 
-    .containerIconMenu .iconMenu {
+    .header__iconMenu {
         color: #FFFFFF;
     }
 
-    .containerLogoHeader {
+    .header__containerLogoGeneral {
         display: flex;
         justify-content: flex-end;
     }
 
-    .containerLogo {
+    .header__containerLogoSpecific {
         background-color: #002050;
         width: 50%;
         height: 100%;
@@ -91,12 +89,12 @@ body {
         padding: 0.60rem;
     }
 
-    .containerLogo p {
+    .header__logo {
         color: #FFFFFF;
         font-size: 0.88rem;
     }
 
-    .containerBannerInitial {
+    .header__containerBanner {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -110,7 +108,7 @@ body {
     }
     
     /* Corrigir o posicionamento deste container, porque não está centralizando. */
-    .containerTextsBannerInitial {
+    .header__containerTextsBanner {
         width: 100%;
         height: 70%;
         display: flex;
@@ -121,12 +119,12 @@ body {
         gap: 2rem;
     }
 
-    .containerBannerInitial h1 {
+    .header__titleBanner {
         font-size: 2.63rem;
         color: #FFFFFF;
     }
 
-    .containerBannerInitial .paragrafoBannerInitial {
+    .header__paragraphBanner {
         width: 90%;
         font-size: 1.5rem;
         font-weight: normal;
@@ -134,29 +132,29 @@ body {
         color: #FFFFFF;
     }
 
-    .btnBannerInitial {
+    .header__containerLinkBanner {
         background-color: #00A4EF;
         width: 45%;
         padding: 1rem;
         text-align: center;        
     }
 
-    .btnBannerInitial a {
+    .banner__link {
         text-decoration: none;
         color: #FFFFFF;
         font-size: 1.32rem;
     }
 
-    .btnBannerInitial:hover {
+    .banner__link:hover {
         background-color: #58beee;
     }
     
-    .paragrafoBannerInitialFinal {
+    .header__containerFooterBanner {
         width: 25%;
         margin-top: auto;
     }
 
-    .paragrafoBannerInitialFinal p {
+    .footerBanner__paragraph {
         text-transform: uppercase;
         word-wrap: break-word;
     }
@@ -185,7 +183,7 @@ body {
     } */
 
     /* Estilo da seção principal (com os cards com icones de alvo) */
-    .containerSectionMain {
+    .main__section {
         width: 100%;
         background-color: #FFFFFF;
         margin: 0 auto;
@@ -198,20 +196,20 @@ body {
         ;
     }
 
-    .containerParagraphMain {
+    .section__containerParagraph {
         grid-area: ParagrafhMain;
     }
 
-    .containerTitleSection {
+    .section__containerTitle {
         grid-area: TitleSectionMain;
     }
 
-    .containerCardsTarget {
+    .section__containerCardsTarget {
         grid-area: CardsTarget;
     }
 
-    .containerParagraphMain {
-        width: 95%;
+    .section__containerParagraph {
+        width: 90%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -221,12 +219,9 @@ body {
         gap: 3vh;
     }
 
-    .containerParagraphMain p {
-        text-align: center;
-        font-size: 1rem;
-    }
+    .section_paragraph { text-align: center; font-size: 1rem; }
 
-    .containerTitleSection {
+    .section__containerTitle {
         width: 80%;
         display: flex;
         flex-direction: column;
@@ -234,17 +229,17 @@ body {
         align-items: center;
         margin: 0 auto;
         gap: 2vh;
+        margin-bottom: 7%;
     }
 
-    .titleSecondary {
+    .section__title--blue {
         color: #2571B7;
         font-size: 1.5rem;
         margin-top: 8%;
+        text-align: center;
     }
 
-    .containerTitleSection p {
-        font-size: 0.95rem;
-    }
+    .section_resumeTitle { text-align: center; font-size: 0.95rem; }
 
     /* 
     .containerCardsTarget {
@@ -256,7 +251,7 @@ body {
         gap: 2vh;
     } */
 
-    .containerCardsTarget {
+    .section__containerCardsTarget {
         width: 95%;
         margin: 0 auto;
         display: grid;
@@ -274,92 +269,63 @@ body {
         align-items: center;
     } */
 
-    .containerCardTarget {
+    .section__containerCardTarget {
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
         grid-template-areas:
-            'IconTarget ContentCardTarget ContentCardTarget '
-            'IconTarget ContentCardTarget ContentCardTarget '
+            'IconTarget ContentCardTarget ContentCardTarget'
+            'IconTarget ContentCardTarget ContentCardTarget'
         ;
         padding: 1.20rem;
 
     }
 
-    .containerImgIconTarget {
-        grid-area: IconTarget;
-        align-self: center;
-    }
+    .section__containerIconTarget { grid-area: IconTarget; align-self: center; }
 
-    .containerContentCardTarget {
-        grid-area: ContentCardTarget;
-        justify-content: center;
-    }
+    .containerContentCardTarget { grid-area: ContentCardTarget; justify-content: center; }
 
-    .containerImgIconTarget {
-        width: 60%;
-        height: 70%;
-    }
+    .section__containerIconTarget { width: 60%; height: 70%; }
 
-    .containerImgIconTarget img {
+    .card_iconeTarget {
         width: 100%;
         height: 100%;
         object-fit: contain;
     }
 
-    .containerContentCardTarget {
+    .section__containerContentCardTarget {
         display: flex;
         flex-direction: column;
         gap: 0.50rem;
+        grid-column: 2/4;
     }
 
-    .containerContentCardTarget h3 {
-        font-size: 1.15rem;
-    }
+    .card__title { font-size: 1.15rem; }
 
-    .containerContentCardTarget p {
-        font-size: 0.80rem;
-    }
+    .card__resume { font-size: 0.80rem; width: 100%; }
 
-    .target1, .target2, .target3, .target4, .target5, .target6 {
+    .card--targetDarkBlue, .card--targetBlue, .card--targetGreen, .card--targetOrange, .card--targetPurple, .card--targetFaintBlue {
         color: #FFFFFF;
     }
 
-    .target1 {
-        background-color: #0072C6;
-    }
+    .card--targetDarkBlue {background-color: #0072C6;}
 
-    .target2 {
-        background-color: #2C5898;
-    }
+    .card--targetBlue {background-color: #2C5898;}
 
-    .target3 {
-        background-color: #207245;
-    }
+    .card--targetGreen {background-color: #207245;}
 
-    .target4 {
-        background-color: #CB4A32;
-    }
+    .card--targetOrange {background-color: #CB4A32;}
 
-    .target5 {
-        background-color: #733781;
-    }
+    .card--targetPurple {background-color: #733781;}
 
-    .target6 {
-        background-color: #00AFF0;
-    }
+    .card--targetFaintBlue {background-color: #00AFF0;}
 
 
     /* Estilo da seção secundária (que tem os cardscom icones de mãos, segurança e laptop) */
-    .containerSectionSecondary {
-        width: 100%;
-        height: 30%;
-    }
+    .section__containerSecondary { width: 100%; height: 30%; }
 
-    .containerTitleSection {
-        margin-bottom: 10%;
-    }
+    .sectionSecondary__containerTitle { margin-bottom: 10%; }
 
-    .containerCardsSecondary {
+    .section__containerCardsSecondary {
         width: 95%;
         height: 90%;
         margin: 0 auto;
@@ -367,101 +333,78 @@ body {
         flex-direction: column;
     }
 
-    .cardSecondary {
+    .section__cardSecondary {
         display: grid;
         grid-template-columns: 2fr 1fr 1fr;
         grid-template-areas: 
             'conteent conteent iconn'
             'conteent conteent iconn'
-            'button button .'
+            'button button iconn'
         ;
         gap: 1.5rem;
     }
 
-    .textColorGreen  {
-        color: #7FBA00;
-    }
+    .title--green  { color: #7FBA00; }
 
-    .borderGreen {
-        border: 1px solid #7FBA00;
-    }
+    .button--borderGreen { border: 1px solid #7FBA00; }
 
-    .textColorBlue {
-        color: #00A4EF;
-    }
+    .title--blue { color: #00A4EF; }
 
-    .borderBlue {
-        border: 1px solid #00A4EF;
-    }
+    .button--borderBlue { border: 1px solid #00A4EF; }
 
-    .textColorOrange {
-        color: #FFB900;
-    }
+    .title--orange { color: #FFB900; }
 
-    .borderOrange {
-        border: 1px solid #FFB900;
-    }
+    .button--borderOrange { border: 1px solid #FFB900; }
 
-    .containerContentCardSecondary {
+    .cardSecondary__containerContent {
         grid-area: conteent;
         display: grid;
-        gap: 0.62rem;
+        gap: 0.92rem;
     }
 
-    .containerImgCardSecondary {
+    .cardSecondary__resume { font-size: 0.75rem; color: #737373; }
+
+    .cardSecondary__containerIcon {
         grid-area: iconn;
         align-self: center;
         justify-self: flex-end;
     }
 
-    hr {
-        margin-top: 5%;
-        margin-bottom: 5%;
-    }
+    hr { margin-top: 5%; margin-bottom: 5%; }
 
-    .containerBtnCardSecondary {
-        grid-area: button;
-    }
+    .cardSecondary__containerButton { grid-area: button; }
 
-    .containerBtnCardSecondary button {
-        padding: 0.50rem;
-        background-color: #FFFFFF;
-    }
+    .cardSecondary__button { padding: 0.50rem; background-color: #FFFFFF; }
 
-    .btnGreen:hover, .btnBlue:hover, .btnOrange:hover {
-        color: #FFFFFF;
-    }
+    .cardSecondary__button:hover { color: #FFFFFF; }
 
-    .btnGreen:hover {
-        background-color: rgba(151, 177, 95, 0.439);
-    }
+    .buttonGreen--hover:hover { background-color: rgba(151, 177, 95, 0.439);}
 
-    .btnBlue:hover {
-        background-color: rgba(94, 170, 200, 0.439);
-    }
+    .buttonBlue--hover:hover { background-color: rgba(94, 170, 200, 0.439); }
 
-    .btnOrange:hover {
-        background-color: rgba(223, 169, 20, 0.439);
-    }
+    .buttonOrange--hover:hover { background-color: rgba(223, 169, 20, 0.439); }
 
-    hr {
-        border: 2px solid #DEDEDE;
-    }
+    hr { border: 2px solid #DEDEDE; }
     
-    .containerSectionSecundaryTwo {
+    /* Estilo da segunda seção secundária. */
+    .main__sectionSecondaryTwo {
         width: 100%;
         height: 25%;
         margin-bottom: 20%;
     }
 
-    .containerCardsSecondaryTwo {
+    .sectionSecondaryTwo__containerCards {
         width: 100%;
         height: 100%;
         display: flex;
         flex-direction: column;
     }
 
-    .cardsSecondaryTwo {
+    .sectionSecondaryTwo__containerTitle {
+        margin-bottom: 15%;
+    }
+
+    .sectionSecondaryTwo__cards {
         width: 95%;
         height: 100%;
         margin: 0 auto;
@@ -469,31 +412,32 @@ body {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        padding: 1.50rem;
+        padding: 1.60rem;
     }
 
-    .cardsSecondaryTwo.borderBottomNone {
+    .sectionSecondaryTwo__cards.borderBottomNone {
         border-top: 3px solid #DEDEDE;
         border-left: 3px solid #DEDEDE;
         border-right: 3px solid #DEDEDE;
     }
 
-    .cardsSecondaryTwo.borderBottom {
+    .sectionSecondaryTwo__cards.borderBottom {
         border: 3px solid #DEDEDE;
     }
 
-    .cardsSecondaryTwo h3 {
+    .sectionSecondaryTwo__title {
         color: #F25022;
         font-size: 0.94rem;
     }
 
-    .cardsSecondaryTwo p {
+    .sectionSecondaryTwo__resume {
         font-size: 0.75rem;
+        color: #737373;
     }
 
 
     /* Estilização do container Aside */
-    .containerAside {
+    .aside {
         width: 100%;
         height: 14rem;
         background-image: url("../imagens/img_banner_secondary_mobile.png");
@@ -502,7 +446,7 @@ body {
         margin-top: 10%;       
     }
 
-    .containerBannerSecondary {
+    .aside__containerBanner {
         display: flex;
         width: 80%;
         height: 100%;
@@ -511,13 +455,11 @@ body {
         margin: 0 auto;
     }
 
-    .containerBannerSecondary p {
+    .aside__resume {
         text-align: center;
         font-size: 1.5rem;
         color: #FFFFFF;
     }
-
-
 
 
 }
