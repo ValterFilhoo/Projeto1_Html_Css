@@ -22,6 +22,7 @@ body {
             'Header'
             'Main'
             'Aside'
+            'AsideTwo'
             'Footer'
         ;
 
@@ -48,9 +49,12 @@ body {
         grid-area: Aside;
     }
 
+    .asideTwo {
+        grid-area: AsideTwo;
+    }
+
     .footer {
         grid-area: Footer;
-        background-color: rgb(162, 214, 111);
     }
 
 
@@ -159,12 +163,12 @@ body {
         word-wrap: break-word;
     }
 
-    span {
+    .footerBanner__span {
         font-size: 0.60rem;
         color: #FFFFFF;
     }
 
-    strong {
+    .footerBanner__strong {
         color: #FFFFFF;
         font-size: 1.50rem;
     }
@@ -219,7 +223,7 @@ body {
         gap: 3vh;
     }
 
-    .section_paragraph { text-align: center; font-size: 1rem; }
+    .section_paragraph { text-align: center; font-size: 1rem; color: #737373;}
 
     .section__containerTitle {
         width: 80%;
@@ -239,7 +243,7 @@ body {
         text-align: center;
     }
 
-    .section_resumeTitle { text-align: center; font-size: 0.95rem; }
+    .section_resumeTitle { text-align: center; font-size: 0.95rem; color: #737373;}
 
     /* 
     .containerCardsTarget {
@@ -461,6 +465,135 @@ body {
         color: #FFFFFF;
     }
 
+
+    /* Estilização do AsideTwo, próximo ao footer, responsável pelo form. */
+    .asideTwo {
+        width: 90%;
+        height: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-bottom: 10%;
+    }
+
+    .asideTwo__containerParagraph {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15%;
+        margin-bottom: 10%;
+    }
+
+    .asideTwo__paragraph {
+        font-size: 0.94rem;
+        color: #737373;
+        text-align: center;
+    }
+
+    .asideTwo__containerForm {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        background-color: #E6E6E6;
+        padding: 1rem;
+    }
+
+    .asideTwo__containerInput {
+        display: flex;
+        flex-direction: column;
+        gap: 0.50rem;
+    }
+
+    .asideTwo_label {
+        font-size: 0.75rem;
+        color: #737373;
+    }
+
+    .asideTwo__label.realce--blue {
+        color: #2571B7;
+    }
+
+    .asideTwo__input {
+        height: 3rem;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border: none;
+        padding: 1rem;
+        font-size: 0.94rem;
+        color: #737373;
+    }
+
+    .asideTwo__input.focus--inputBlue:focus {
+       outline: none;
+       border: 2px solid #2571B7;
+    }
+
+    .asideTwo__containerButton {
+        width: 100%;
+        height: 52px;
+        margin-top: 8%;
+    }
+
+    .asideTwo__button {
+        width: 100%;
+        height: 100%;
+        border: none;
+        background-color: #00A4EF;
+        color: #FFFFFF;
+        font-size: 1.31rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .asideTwo__button.hover--realce:hover {
+        background-color: #57b8e6;
+    }
+
+    /* Estilização do Footer. */
+    .footer {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .footer__container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        'LogoLeft LogoRight'
+        'Copyright Copyright'
+        ;
+        gap: 1rem;
+        margin-top: 15%;
+        margin-bottom: 5%;
+    }
+
+    .footer__logo {
+        color: black;
+        text-transform: uppercase;
+    }
+
+    .footer__containerLogo.containerLogo--left {
+        grid-area: LogoLeft;
+        text-align: center;
+    }
+
+    .footer__containerLogo.containerLogo--right {
+        grid-area: LogoRight;
+        text-align: center;
+    }
+
+    .footer__containerParagraph {
+        grid-area: Copyright;
+        margin: 0 auto;
+    }
+
+    .footer__paragraph {
+        font-size: 0.75rem;
+        color: #B4B4B4;
+    }
 
 }
 
