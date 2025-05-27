@@ -23,7 +23,7 @@ body {
     "Aside"
     "AsideTwo"
     "Footer";
-  gap: 5%;
+  gap: 3%;
 }
 
 /* Estilo do cabeçalho mobile */
@@ -71,11 +71,13 @@ body {
   margin-left: 5%;
   width: 15%;
   height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .header__iconMenu {
   width: 100%;
-  height: 100%;
+  height: 80%;
   color: #ffffff;
 }
 
@@ -98,6 +100,14 @@ body {
 .header__logo {
   color: #ffffff;
   font-size: 0.88rem;
+}
+
+.navDesktop--ocultMobile {
+  display: none;
+}
+
+.header__logoDesktop--disableMobile {
+  display: none;
 }
 
 /* Estilização do Aside responsável pelo primeiro banner. */
@@ -180,6 +190,10 @@ body {
 .footerBanner__strong {
   color: #ffffff;
   font-size: 1.5rem;
+}
+
+.iconArrow--ocultMobile {
+  display: none;
 }
 
 /* Estilo da seção principal (com os cards com icones de alvo) */
@@ -303,37 +317,36 @@ body {
   width: 100%;
 }
 
-.card--targetDarkBlue,
-.card--targetBlue,
-.card--targetGreen,
-.card--targetOrange,
-.card--targetPurple,
-.card--targetFaintBlue {
+.card__title--White, .card__resume--White {
   color: #ffffff;
 }
 
-.card--targetDarkBlue {
+.cardTarget--backgroundDarkBlue {
   background-color: #0072c6;
 }
 
-.card--targetBlue {
+.cardTarget--backgroundBlue {
   background-color: #2c5898;
 }
 
-.card--targetGreen {
+.cardTarget--backgroundGreen {
   background-color: #207245;
 }
 
-.card--targetOrange {
+.cardTarget--backgroundOrange {
   background-color: #cb4a32;
 }
 
-.card--targetPurple {
+.cardTarget--backgroundPurple {
   background-color: #733781;
 }
 
-.card--targetFaintBlue {
+.cardTarget--backgroundFaintBlue {
   background-color: #00aff0;
+}
+
+.cardTarget--ocultMobile {
+  display: none;
 }
 
 /* Estilo da seção secundária (que tem os cardscom icones de mãos, segurança e laptop) */
@@ -442,8 +455,7 @@ hr {
 /* Estilo da segunda seção secundária. */
 .main__sectionSecondaryTwo {
   width: 100%;
-  height: 25%;
-  margin-bottom: 20%;
+  height: 28%;
 }
 
 .sectionSecondaryTwo__containerCards {

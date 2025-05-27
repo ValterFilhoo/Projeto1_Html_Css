@@ -44,6 +44,10 @@
     align-content: center;
   }
 
+  .nav.active {
+    display: grid;
+  }
+  
   .nav {
     grid-area: Nav;
     width: 100%;
@@ -77,6 +81,9 @@
     border: 1px solid white;
   }
 
+  .menuMobile--disableDesktop {
+    display: none;
+  }
 
   /* Estilização do aside do banner inicial da página versão desktop */
   .asideInitial__containerBanner {
@@ -142,6 +149,51 @@
 
   .asideInitial__containerLinkBanner.container--spacing {
     margin: 0;
+  }
+
+  /* Estilização da section principal */
+  .section__containerParagraph {
+    margin-top: 8%;
+    height: 6.70rem;
+  }
+  
+  .section_paragraph, .section_resumeTitle {
+    font-size: 1.25rem;
+  }
+  
+  .textSpan--colorRedDesktop {
+    color: #F25022;
+  }
+
+  .section__title {
+    font-size: 2.5rem;
+    margin-bottom: 5%;
+  }
+
+  .section__containerCardsTarget {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section__containerCardTarget {
+    
+  }
+  
+
+  .cardTarget--backgroundStrongBlue {
+    background-color: #094AB2;
+  }
+
+  .cardTarget--backgroundMediumBlue {
+    background-color: #0073C6;
+  }
+
+  .cardTarget--backgroundCyanBlue {
+    background-color: #0093BE;
+  }
+
+  .cardTarget--backgroundPurpleBlue {
+    background-color: #5558AF;
   }
 
 }
