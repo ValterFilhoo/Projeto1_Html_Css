@@ -23,7 +23,6 @@ body {
     "Aside"
     "AsideTwo"
     "Footer";
-  gap: 3%;
 }
 
 /* Estilo do cabeçalho mobile */
@@ -31,9 +30,9 @@ body {
   grid-area: Header;
   display: grid;
   grid-template-columns: 1fr;
-  grid-auto-rows: 60px;
   margin-bottom: 4%;
   justify-content: center;
+  grid-auto-rows: 3rem;
 }
 
 .asideInitial {
@@ -60,7 +59,7 @@ body {
   display: grid;
   background-color: #2571b7;
   grid-template-columns: 1fr 1fr;
-  grid-auto-rows: 60px;
+  grid-auto-rows: 100%;
   align-items: center;
   position: fixed;
   left: 0;
@@ -69,8 +68,8 @@ body {
 
 .header__containerIcon {
   margin-left: 5%;
-  width: 15%;
-  height: 100%;
+  width: 2rem;
+  height: 3rem;
   display: flex;
   align-items: center;
 }
@@ -88,8 +87,8 @@ body {
 
 .header__containerLogoSpecific {
   background-color: #002050;
-  width: 60%;
-  height: 100%;
+  width: 7.07rem;
+  height: 1.75rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -111,12 +110,16 @@ body {
 }
 
 /* Estilização do Aside responsável pelo primeiro banner. */
+.asideInitial {
+  height: 37rem;;
+}
+
 .asideInitial__containerBanner {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   width: 100%;
-  height: 70vh;
+  height: 100%;
   align-items: center;
   background-image: url("../imagens/img_banner_initial_alt.jpg");
   background-size: cover;
@@ -150,16 +153,17 @@ body {
 
 .asideInitial__containerLinkBanner {
   background-color: #00a4ef;
-  width: 50%;
+  width: 11.75rem;
+  height: 3.25rem;
   padding: 0.7rem;
   text-align: center;
-  cursor: pointer;
 }
 
 .banner__link {
   text-decoration: none;
   color: #ffffff;
   font-size: 1.32rem;
+  cursor: pointer;
 }
 
 .asideInitial__containerLinkBanner:hover {
@@ -171,25 +175,21 @@ body {
 }
 
 .asideInitial__containerFooterBanner {
-  width: 20%;
+  width: 8.12rem;
+  height: 2.43rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.asideInitial__logoBanner {
+  width: 100%;
+  height: 100%;
+}
+
 .footerBanner__paragraph {
   text-transform: uppercase;
   word-wrap: break-word;
-}
-
-.footerBanner__span {
-  font-size: 0.6rem;
-  color: #ffffff;
-}
-
-.footerBanner__strong {
-  color: #ffffff;
-  font-size: 1.5rem;
 }
 
 .iconArrow--ocultMobile {
@@ -229,6 +229,7 @@ body {
   align-items: center;
   margin: 0 auto;
   gap: 3vh;
+  margin-top: 3.75rem;
 }
 
 .section_paragraph {
@@ -274,9 +275,11 @@ body {
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-areas:
     "IconTarget ContentCardTarget ContentCardTarget"
-    "IconTarget ContentCardTarget ContentCardTarget";
-  padding: 1rem;
+    "IconTarget ContentCardTarget ContentCardTarget"
+  ;
   gap: 1%;
+  height: 124px;
+  align-items: flex-end;
 }
 
 .section__containerIconTarget {
@@ -290,15 +293,18 @@ body {
 }
 
 .section__containerIconTarget {
-  width: 80%;
-  height: 100%;
+  width: 3.06rem;
+  height: 3.06rem;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 .section__iconeTarget {
   width: 100%;
+  height: 100%;
 }
 
 .section__containerContentCardTarget {
@@ -455,7 +461,7 @@ hr {
 /* Estilo da segunda seção secundária. */
 .main__sectionSecondaryTwo {
   width: 100%;
-  height: 28%;
+  height: 40.62rem;
 }
 
 .sectionSecondaryTwo__containerCards {
@@ -466,7 +472,14 @@ hr {
 }
 
 .sectionSecondaryTwo__containerTitle {
-  margin-bottom: 15%;
+  margin-top: 3.75rem;
+  margin-bottom: 2.06rem;
+  height: 4.25rem;
+  text-align: start;
+}
+
+.sectionSecondaryTwo__title {
+  text-align: center;
 }
 
 .sectionSecondaryTwo__cards {
@@ -490,7 +503,8 @@ hr {
   border: 3px solid #dedede;
 }
 
-.sectionSecondaryTwo__title {
+
+.sectionSecondaryTwo__cardTitle {
   color: #f25022;
   font-size: 0.94rem;
 }
@@ -498,6 +512,7 @@ hr {
 .sectionSecondaryTwo__resume {
   font-size: 0.75rem;
   color: #737373;
+  text-align: center;
 }
 
 /* Estilização do container Aside */
@@ -507,7 +522,7 @@ hr {
   background-image: url("../imagens/img_banner_secondary_mobile.png");
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: 10%;
+  margin-top: 3.75rem;
 }
 
 .aside__containerBanner {
@@ -540,7 +555,8 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10%;
+  margin-top: 3.75rem;
+  margin-bottom: 1.69rem;
 }
 
 .asideTwo__paragraph {

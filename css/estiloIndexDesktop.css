@@ -24,7 +24,7 @@
   .header {
     background-color: #2571b7;
     width: 100%;
-    height: 100px;
+    height: 5rem;
     margin-bottom: 0%;
   }
 
@@ -34,6 +34,7 @@
     grid-template-areas: 
     'LogoDesktop Nav LogoRight' 
     'LogoDesktop Nav LogoRight' ;
+    position: static;
   }
 
   .header__containerLogoDesktop {
@@ -86,19 +87,9 @@
   }
 
   /* Estilização do aside do banner inicial da página versão desktop */
+
   .asideInitial__containerBanner {
-    width: 100%;
-    height: 800px;
     background-image: url("../imagens/image_banner_initial_desktop.png");
-  }
-
-  .asideInitial__paragraphBanner {
-    text-align: left;
-  }
-
-  .asideInitial__containerBanner {
-    width: 100%;
-    height: 820px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 
@@ -106,7 +97,11 @@
     'LogoArrow Logo'
     ;
     padding: 2rem;
-    justify-content: center
+    justify-content: center;
+  }
+
+  .asideInitial__paragraphBanner {
+    text-align: left;
   }
 
   .asideInitial__containerTextsBanner {
@@ -121,12 +116,13 @@
 
  .asideInitial__containerArrow {
     grid-area: LogoArrow;
-    width: 20%;
+    width: 1.81rem;
     height: 3.5rem;
     align-self: flex-end;
     margin: 0 auto;
     position: relative;
     right: 16rem;
+    bottom: 1rem;
   }
 
   .asideInitial__iconArrow {
@@ -135,7 +131,7 @@
   }
 
   .asideInitial__containerFooterBanner {
-    width: 40%;
+    width: 10.62rem;
     height: 100%;
     grid-area: Logo;
     display: grid;
@@ -174,11 +170,6 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-
-  .section__containerCardTarget {
-    
-  }
-  
 
   .cardTarget--backgroundStrongBlue {
     background-color: #094AB2;
