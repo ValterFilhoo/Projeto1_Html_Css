@@ -40,7 +40,7 @@ function viewIconArrow () {
         if (containerIconArrow.classList.contains('iconArrow--ocultMobile')) {
 
             containerIconArrow.classList.remove('iconArrow--ocultMobile');
-            console.log()
+            
         };
 
     };

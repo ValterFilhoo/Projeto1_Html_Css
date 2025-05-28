@@ -1,24 +1,6 @@
-
 /* versão desktop */
 @media screen and (min-width: 1024px) {
 
-    .containerLayout {
-         width: 100%;
-        height: 100%;
-
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "Header"
-            "AsideInitial "
-            "Main"
-            "Aside"
-            "AsideTwo"
-            "Footer";
-            gap: 0;
-    }
-
-    
   /* Estilização do cabeçalho versão desktop */
   
   .header {
@@ -51,6 +33,7 @@
   
   .nav {
     grid-area: Nav;
+    display: grid;
     width: 100%;
   }
 
@@ -82,12 +65,11 @@
     border: 1px solid white;
   }
 
-  .menuMobile--disableDesktop {
+  .header__menuMobile--ocultDesktop {
     display: none;
   }
 
   /* Estilização do aside do banner inicial da página versão desktop */
-
   .asideInitial__containerBanner {
     background-image: url("../imagens/image_banner_initial_desktop.png");
     display: grid;
@@ -115,6 +97,7 @@
   } 
 
  .asideInitial__containerArrow {
+    display: grid;
     grid-area: LogoArrow;
     width: 1.81rem;
     height: 3.5rem;
