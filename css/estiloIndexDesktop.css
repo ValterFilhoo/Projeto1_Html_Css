@@ -14,9 +14,11 @@
     display: grid;
     grid-template-columns: 2fr 2fr 1fr;
     grid-template-areas: 
-    'LogoDesktop Nav LogoRight' 
-    'LogoDesktop Nav LogoRight' ;
-    position: static;
+    'LogoDesktop Nav LogoRight';
+    position: fixed;
+    height: 5rem;
+    align-items: center;
+    justify-content: center;
   }
 
   .header__containerLogoDesktop {
@@ -25,6 +27,10 @@
     display: grid;
     justify-content: center;
     align-content: center;
+  }
+
+  .header__logoDesktop {
+    height: 25px;
   }
 
   .nav.active {
@@ -145,12 +151,9 @@
     display: grid;
   }
 
-  .asideInitial__containerFooterBanner {
-    justify-self: center;
-  }
-  .asideInitial__containerLinkBanner.container--spacing {
-    margin: 0;
-  }
+  .asideInitial__containerFooterBanner { justify-self: center; }
+
+  .asideInitial__containerLinkBanner.container--spacing { margin: 0; }
 
   /* Estilização da section principal */
   .section__containerParagraph {
@@ -158,13 +161,9 @@
     height: 6.70rem;
   }
   
-  .section_paragraph, .section_resumeTitle {
-    font-size: 1.25rem;
-  }
+  .section_paragraph, .section_resumeTitle { font-size: 1.25rem; }
   
-  .textSpan--colorRedDesktop {
-    color: #F25022;
-  }
+  .textSpan--colorRedDesktop { color: #F25022; }
 
   .section__title {
     font-size: 2.5rem;
@@ -176,20 +175,86 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .cardTarget--backgroundStrongBlue {
-    background-color: #094AB2;
+  .section__containerCardTarget { display: grid; }
+
+  .cardTarget--backgroundStrongBlue { background-color: #094AB2; }
+
+  .cardTarget--backgroundMediumBlue { background-color: #0073C6; }
+
+  .cardTarget--backgroundCyanBlue { background-color: #0093BE; }
+
+  .cardTarget--backgroundPurpleBlue { background-color: #5558AF; }
+
+  .card__resume { font-size: 1rem; word-wrap: break-word; max-width: 90%;}
+
+  .sectionSecondary__title { font-size: 2.5rem; }
+
+  .section__containerCardsSecondary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 'CardOne CardTwo CardTree';
   }
 
-  .cardTarget--backgroundMediumBlue {
-    background-color: #0073C6;
+  .cardSecondary--columnOne {
+    display: grid;
+    grid-area: CardOne;
   }
 
-  .cardTarget--backgroundCyanBlue {
-    background-color: #0093BE;
+  .cardSecondary--columnTwo {
+    display: grid;
+    grid-area: CardTwo;
   }
 
-  .cardTarget--backgroundPurpleBlue {
-    background-color: #5558AF;
+  .cardSecondary--columnTree {
+    display: grid;
+    grid-area: CardTree;
+  }
+
+  .section__cardSecondary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cardSecondary__containerIcon { order: 1; } 
+
+  .cardSecondary__containerButton { order: 3; }
+
+  .cardSecondary__containerContent { 
+    order: 2; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+  }
+
+  .cardSecondary__title {
+    font-size: 1.25rem;
+  }
+
+  .cardSecondary__resume {
+    text-align: center;
+    width: 60%;
+    font-size: 1rem;
+  } 
+
+  .cardSecondary__line {
+    display: flex;
+    width: 3.31rem;
+    justify-self: center;
+  }
+
+  .cardSecondary__containerIcon {
+    width: 10rem;
+  }
+
+  .cardSecondary__icon {
+    width: 100%;
+  }
+
+  .sectionSecondary__line.line--ocultDesktop {
+    display: none;
   }
 
 }

@@ -458,6 +458,10 @@ hr {
   border: 2px solid #dedede;
 }
 
+.line--ocultMobile {
+  display: none;
+}
+
 /* Estilo da segunda seção secundária. */
 .main__sectionSecondaryTwo {
   width: 100%;
