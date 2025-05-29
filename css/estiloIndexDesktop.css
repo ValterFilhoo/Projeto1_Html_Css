@@ -16,7 +16,7 @@
     grid-template-areas: 
     'LogoDesktop Nav LogoRight';
     position: fixed;
-    height: 5rem;
+    height: 5rem; /* 5 * 16 = 80px */
     align-items: center;
     justify-content: center;
   }
@@ -30,7 +30,7 @@
   }
 
   .header__logoDesktop {
-    height: 25px;
+    height: 1.56rem; /* 25 */
   }
 
   .nav.active {
@@ -79,7 +79,7 @@
 
   .asideInitial {
     width: 100%;
-    height: 820px;
+    height: 51.25rem; /* 820px */
   }
 
   .asideInitial__containerBanner {
@@ -90,6 +90,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 2rem; /* 2 * 16 = 32px */
+    
   }
 
   .asideInitial__paragraphBanner {
@@ -99,7 +100,7 @@
   .asideInitial__containerTextsBanner {
     grid-column: 1/3;
     grid-row: 1;
-    width: 772px;    
+    width: 48.25rem; /* 48.25 * 16 = 772px */  
     display: grid;
     align-self: flex-end;
     justify-self: center;
@@ -124,6 +125,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
   }
 
   .banner__link {
@@ -135,7 +137,7 @@
     width: 3.43rem;
     height: 56px;
     position: absolute;
-    top: 520px;
+    top: 32.5rem; /* 32.5 * 16 = 520px */
   }
 
   .asideInitial__iconArrow {
@@ -156,6 +158,17 @@
   .asideInitial__containerLinkBanner.container--spacing { margin: 0; }
 
   /* Estilização da section principal */
+   .section__containerCardsTarget {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem; /* 40px */
+  }
+
+  .section__containerTitle {
+    margin-bottom: 3%;
+  }
+
   .section__containerParagraph {
     margin-top: 8%;
     height: 6.70rem;
@@ -170,11 +183,6 @@
     margin-bottom: 5%;
   }
 
-  .section__containerCardsTarget {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .section__containerCardTarget { display: grid; }
 
   .cardTarget--backgroundStrongBlue { background-color: #094AB2; }
@@ -187,6 +195,11 @@
 
   .card__resume { font-size: 1rem; word-wrap: break-word; max-width: 90%;}
 
+
+  /* Estilização da seção secundária */
+  .sectionSecondary__containerTitle {
+    margin-bottom: 5%;
+  }
   .sectionSecondary__title { font-size: 2.5rem; }
 
   .section__containerCardsSecondary {
@@ -229,9 +242,7 @@
     align-items: center; 
   }
 
-  .cardSecondary__title {
-    font-size: 1.25rem;
-  }
+  .cardSecondary__title { font-size: 1.25rem; }
 
   .cardSecondary__resume {
     text-align: center;
@@ -245,16 +256,148 @@
     justify-self: center;
   }
 
-  .cardSecondary__containerIcon {
-    width: 10rem;
+  .cardSecondary__containerIcon { width: 10rem; }
+
+  .cardSecondary__icon { width: 100%; }
+
+  .sectionSecondary__line.line--ocultDesktop { display: none; }
+
+
+  /* Estilização da segunda seção secundária (sectionSecondaryTwo) */
+  .main__sectionSecondaryTwo {
+    height: 40vh;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 6rem;
   }
 
-  .cardSecondary__icon {
+  .sectionSecondaryTwo__title {
+    font-size: 2.5rem;
+  }
+
+  .sectionSecondaryTwo__containerTitle {
+    margin-top: 0;
+  }
+
+  .title--blue {
+    color: #2571B7;
+  }
+  
+  .sectionSecondaryTwo__containerCards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 'TitleContainer TitleContainer TitleContainer TitleContainer'
+    'CardColumnOne CardColumnTwo CardColumnTree CardColumnFour';
+    height: 20.31rem; /* 325px */
+    margin-top: 6rem;
+  }
+
+  .sectionSecondaryTwo__containerTitle {
+    grid-area: TitleContainer;
+    align-self: center;  
+    margin: 0;
+  }
+
+  .cardSecondaryTwo--columnOne {
+    grid-area: CardColumnOne;
+  }
+
+  .cardSecondaryTwo--columnTwo {
+    grid-area: CardColumnTwo;
+  }
+
+  .cardSecondaryTwo--columnTree {
+    grid-area: CardColumnTree;
+  }
+
+  .cardSecondaryTwo--columnFour {
+    grid-area: CardColumnFour;
     width: 100%;
   }
 
-  .sectionSecondary__line.line--ocultDesktop {
-    display: none;
+  .sectionSecondaryTwo__cards.cards--borderBottomNoneMobile {
+    border: 3px solid #dedede;
+    border-right: none;
+  }
+
+
+  .sectionSecondaryTwo__cards {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    gap: 1.5rem; /* 24 px */
+  }
+
+  .sectionSecondaryTwo__resume {
+    font-size: 1rem; /* 16px */
+    width: 85%;
+  }
+
+
+  /* Estilização do aside */
+  .aside {
+    width: 100%;
+    height: 20rem; /* 320px */
+    margin: 0 auto;
+    background-image: url('../imagens/image_banner_secondary_desktop.png');
+  }
+
+  .aside__containerBanner {
+    width: 90%;
+  }
+
+  .aside__resume {
+    font-size: 3rem; /* 48px */
+    text-align: center;
+  }
+
+  /* Estilização do asideTwo */
+  .asideTwo {
+    margin-bottom: 0;
+  }
+
+  .asideTwo__containerParagraph {
+    margin-bottom: 3rem; /* 48px */
+  }
+
+  .asideTwo__paragraph {
+    font-size: 1.5rem; /* 24px */
+  }
+
+  .asideTwo__containerForm {
+    width: 40%;
+    margin: 0 auto;
+    padding: 3rem;
+  }
+
+  /* Estilização do footer da página, imediatamente abaixo do form */
+  .footer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer__container {
+    width: 40%;
+    margin-bottom: 2%;
+  }
+
+  .footer__containerLogo {
+    width: 70%;
+  }
+
+  .footer__logo {
+    filter: brightness(0);
+    width: 100%;
+    height: 100%;
+}
+
+  .footer__logo {
+    filter: brightness(0);
+  }
+
+  .footer__paragraph {
+    color: #B4B4B4;
   }
 
 }
