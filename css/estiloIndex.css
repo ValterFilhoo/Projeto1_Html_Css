@@ -134,7 +134,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 0.65rem; /*10px */
   gap: 1rem;
 }
 
@@ -278,7 +278,7 @@ body {
     "IconTarget ContentCardTarget ContentCardTarget"
   ;
   gap: 1%;
-  height: 124px;
+  height: 7.75rem; /* 124px*/
   align-items: flex-end;
 }
 
@@ -424,7 +424,7 @@ body {
   justify-self: flex-end;
 }
 
-hr {
+.sectionSecondary__line {
   margin-top: 5%;
   margin-bottom: 5%;
 }
@@ -594,7 +594,7 @@ hr {
 
 .asideTwo__input {
   height: 3rem;
-  background: #ffffff 0% 0% no-repeat padding-box;
+  background-color: #ffffff;
   border: none;
   padding: 1rem;
   font-size: 0.94rem;
@@ -608,7 +608,7 @@ hr {
 
 .asideTwo__containerButton {
   width: 100%;
-  height: 52px;
+  height: 3.25rem; /* 52px */
   margin-top: 8%;
 }
 
@@ -670,7 +670,11 @@ hr {
 }
 
 .footer__logo {
-    filter: brightness(0);
+    filter: brightness(0); /* apenas para transformar a cor do nome da logo (está dentro de um img) em preto e ficar visivel no layout com background branco */
     width: 100%;
     height: 100%;
+}
+
+.footer__paragraph {
+    color: #B4B4B4;
 }

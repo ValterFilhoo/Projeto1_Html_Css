@@ -352,7 +352,7 @@
                 <p class="asideTwo__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
 
-            <form class="asideTwo__form">
+            <form class="asideTwo__form" id="form" onsubmit="">
 
                 <div class="asideTwo__containerForm">
 
@@ -382,7 +382,7 @@
                     </div>
                         
                     <div class="asideTwo__containerButton">
-                        <button class="asideTwo__button hover--realce" type="button">Lorem ipsum</button>
+                        <button class="asideTwo__button hover--realce" onclick="viewAlertWithData()">Lorem ipsum</button>
                     </div>
 
                 </div>
@@ -408,6 +408,61 @@
                 </div>
 
             </div>
+
+
+            <script>
+
+                function viewAlertWithData() {
+
+                    const dataInputOne = document.getElementById("inputOne");
+
+                    const dataInputTwo = document.getElementById("inputTwo");
+
+                    const dataInputTree = document.getElementById("inputTree");
+
+                    const dataInputFour = document.getElementById("inputFour");
+
+                    const dataInputFive = document.getElementById("inputFive");
+
+                    const valueInputOne = dataInputOne.value;
+
+                    const valueInputTwo = dataInputTwo.value;
+
+                    const valueInputTree = dataInputTree.value;
+
+                    const valueInputFour = dataInputFour.value;
+
+                    const valueInputFive = dataInputFive.value;
+
+                    const resultValidateInputs = validateInputs(valueInputOne, valueInputTwo, valueInputTree, valueInputFour, valueInputFive);
+
+                    if (resultValidateInputs === true) {
+
+                        alert(`Dados de cada input do formulário preenchido -> InputOne: ${valueInputOne}; InputTwo: ${valueInputTwo}; InputTree: ${valueInputTree}; InputFour: ${valueInputFour}; InputFive: ${valueInputFive}.`);
+
+                    } else {
+
+                        alert("Todos os campos do formulário são obrigatórios. Por favor, preencha.");
+
+                    };
+
+                    
+                };
+
+                function validateInputs(inputOne, inputTwo, inputTree, inputFour, inputFive) {
+
+                    if (inputOne === "" || inputTwo === "" || inputTree === "" || inputFour === "" || inputFive === "" ) {
+
+                        return false;
+
+                    } else {
+
+                        return true;
+                    };
+
+                };
+
+            </script>
             
         </footer>
 

@@ -2,7 +2,6 @@
 @media screen and (min-width: 1024px) {
 
   /* Estilização do cabeçalho versão desktop */
-  
   .header {
     background-color: #2571b7;
     width: 100%;
@@ -77,7 +76,6 @@
   }
 
   /* Estilização do aside do banner inicial da página versão desktop */
-
   .asideInitial {
     width: 100%;
     height: 51.25rem; /* 820px */
@@ -120,23 +118,22 @@
   }
 
   .asideInitial__containerLinkBanner {
-    width: 16.63rem; 
-    height: 4.18rem;
+    width: 16.63rem; /* 266.08px, tamanho do container no mockup */
+    height: 4.18rem; /* 66.88px */
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    
   }
 
   .banner__link {
-    font-size: 1.75rem;
+    font-size: 1.75rem; /* 28px */
   }
 
  .asideInitial__containerArrow {
     display: grid;
-    width: 3.43rem;
-    height: 56px;
+    width: 3.43rem; /* 54.88 */
+    height: 3.5rem; /* 56px */
     position: absolute;
     top: 32.5rem; /* 32.5 * 16 = 520px */
   }
@@ -149,7 +146,7 @@
   .asideInitial__containerFooterBanner {
     grid-column: 3/4;
     grid-row: 2;
-    width: 10.62rem;
+    width: 10.62rem; /* 169.92px */
     height: 100%;
     display: grid;
   }
@@ -172,15 +169,15 @@
 
   .section__containerParagraph {
     margin-top: 8%;
-    height: 6.70rem;
+    height: 6.70rem; /* 107.2px */
   }
   
-  .section_paragraph, .section_resumeTitle { font-size: 1.25rem; }
+  .section_paragraph, .section_resumeTitle { font-size: 1.25rem; /* 20px */}
   
   .textSpan--colorRedDesktop { color: #F25022; }
 
   .section__title {
-    font-size: 2.5rem;
+    font-size: 2.5rem; /* 40px */
     margin-bottom: 5%;
   }
 
@@ -194,14 +191,14 @@
 
   .cardTarget--backgroundPurpleBlue { background-color: #5558AF; }
 
-  .card__resume { font-size: 1rem; word-wrap: break-word; max-width: 90%;}
+  .card__resume { font-size: 1rem /* 16px */; word-wrap: break-word; max-width: 90%;}
 
 
   /* Estilização da seção secundária */
   .sectionSecondary__containerTitle {
     margin-bottom: 5%;
   }
-  .sectionSecondary__title { font-size: 2.5rem; }
+  .sectionSecondary__title { font-size: 2.5rem; /* 40px */}
 
   .section__containerCardsSecondary {
     display: grid;
@@ -253,11 +250,11 @@
 
   .cardSecondary__line {
     display: flex;
-    width: 3.31rem;
+    width: 3.31rem; /* 52.96px */
     justify-self: center;
   }
 
-  .cardSecondary__containerIcon { width: 10rem; }
+  .cardSecondary__containerIcon { width: 10rem; /* 160px */ }
 
   .cardSecondary__icon { width: 100%; }
 
@@ -273,7 +270,7 @@
   }
 
   .sectionSecondaryTwo__title {
-    font-size: 2.5rem;
+    font-size: 2.5rem; /* 40px */
   }
 
   .sectionSecondaryTwo__containerTitle {
@@ -321,7 +318,6 @@
     border-right: none;
   }
 
-
   .sectionSecondaryTwo__cards {
     width: 100%;
     display: flex;
@@ -334,7 +330,6 @@
     font-size: 1rem; /* 16px */
     width: 85%;
   }
-
 
   /* Estilização do aside */
   .aside {
@@ -369,7 +364,7 @@
   .asideTwo__containerForm {
     width: 40%;
     margin: 0 auto;
-    padding: 3rem;
+    padding: 3rem; /* 48px */
   }
 
   /* Estilização do footer da página, imediatamente abaixo do form */
@@ -385,20 +380,6 @@
 
   .footer__containerLogo {
     width: 70%;
-  }
-
-  .footer__logo {
-    filter: brightness(0);
-    width: 100%;
-    height: 100%;
-}
-
-  .footer__logo {
-    filter: brightness(0);
-  }
-
-  .footer__paragraph {
-    color: #B4B4B4;
   }
 
 }
