@@ -588,7 +588,7 @@ hr {
   color: #737373;
 }
 
-.asideTwo__label.realce--blue {
+.asideTwo__containerInput:focus-within {
   color: #2571b7;
 }
 

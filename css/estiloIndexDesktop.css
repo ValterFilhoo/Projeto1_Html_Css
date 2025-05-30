@@ -19,6 +19,7 @@
     height: 5rem; /* 5 * 16 = 80px */
     align-items: center;
     justify-content: center;
+    z-index: 99999;
   }
 
   .header__containerLogoDesktop {
